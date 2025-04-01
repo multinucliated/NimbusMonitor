@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "9bad0e5e-6c69-47e6-8e12-a90ae76218af",
+		"name": "NimbusMonitor-Postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1026894"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/metrics/query?input_query=What was the average temperature and humidity from sensor 1 and 2 from March 1 st week",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"metrics",
+						"query"
+					],
+					"query": [
+						{
+							"key": "input_query",
+							"value": "What was the average temperature and humidity from sensor 1 and 2 from March 1 st week"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sensor_id\": \"3\",\n    \"temperature\": 30,\n    \"humidity\": 60,\n    \"wind_speed\": 5.2\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/metrics",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
