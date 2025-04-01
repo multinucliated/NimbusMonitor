@@ -68,6 +68,14 @@ curl --location 'http://127.0.0.1:8000/metrics' \
 '
 ```
 
+## Postman ScreenShots
+
+![Getting data using natural language](./images/ss1.png)
+
+![inserting data](./images/ss2.png)
+
+
+
 ## Enhancements
 - The application can be enhanced to support more complex queries and provide more advanced features
 - Implementation of a caching mechanism to improve performance
